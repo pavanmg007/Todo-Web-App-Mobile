@@ -33,7 +33,9 @@ body {
 .jc-sa {
     justify-content: space-between;
 }
-
+.jc-ce {
+    justify-content: center;
+}
 .wrap {
     flex-wrap: wrap;
 }
@@ -76,28 +78,44 @@ p {
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgb(0 0 0 / 20%);
 }
-
+.card2 {
+    max-width: 450px;
+    min-height: 400px;
+    margin: auto;
+    position: relative;
+    border: 1px solid #e74c3c;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 20%);
+}
 .inside-space {
     margin: 20px 0px 10px 30px;
     padding-bottom: 10px;
     font-size: 1rem;
 }
-
-.card-title {
+.ab{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;;
+}
+.card-title, a {
     color: #e74c3c;
+    text-decoration: none;
 }
 
-.title-border {
+.title-border, .title-border1 {
     border-bottom: 2px groove rgb(218, 218, 218);
 }
 
-.card-body {
+.card-body, .card-body1 {
     margin-right: 15px;
     font-weight: 400;
     color: red;
     text-decoration: line-through #ff0000 solid 3px;
 }
-
+.card-container {
+    padding-left: 5rem;
+}
 input[type='checkbox'] {
     width: 25px;
     height: 20px;
@@ -110,7 +128,7 @@ input[type='checkbox'] {
 .card1 {
     position: absolute;
     background: #fff;
-    min-width: 400px;
+    min-width: 450px;
     height: auto;
     border: 1px solid #e74c3c;
     border-radius: 10px;
@@ -140,7 +158,23 @@ input[type='text'] {
     height: auto;
     font-size: 20px;
 }
-
+p.hr{
+    color: #342c2c;
+}
+p.hr::before, p.hr::after{
+    content: '';
+    display: inline-block;
+    width: 150px;
+    height: 2px;
+    align-items: center;
+    background: rgb(179, 179, 179);
+}
+p.hr::before{
+    margin: 15px 10px 15px 0;
+}
+p.hr::after{
+    margin: 15px 0px 15px 15px;
+}
 @media only screen and (max-width: 600px) {
     html {
         font-size: 20px;
@@ -164,6 +198,9 @@ input[type='text'] {
     .card-title {
         color: #545454;
     }
+    .card-title1 {
+        color: #e74c3c;
+    }
     input, label, .card-body, .title2 {
         display: none;
     }
@@ -176,4 +213,25 @@ input[type='text'] {
     .card1{
         min-width: 100%;
     }
+    p.hr::before, p.hr::after{
+        display: none;
+    }
+    .card-container {
+        padding-left: 1rem;
+    }
+    .flex-col {
+        flex-direction: row;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .title2{
+        display: none;
+    }
+    .btn {
+        width: 1.9rem;
+        height: 1.9rem;
+        font-size: 1em;;
+        line-height: 1.9;
+    }
+    
 }
