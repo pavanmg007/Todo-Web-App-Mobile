@@ -195,7 +195,7 @@ p.hr::after{
     .title {
         font-size: 40px;
     }
-    .card-title {
+    .card-title a {
         color: #545454;
     }
     .card-title1 {
