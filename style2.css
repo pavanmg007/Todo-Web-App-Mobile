@@ -1,0 +1,8 @@
+@media only screen and (max-width: 600px) {
+    input, label, .card-body, .title2 {
+        display: inline-block;
+    }
+    .title {
+        font-size: 30px;
+    }
+}
